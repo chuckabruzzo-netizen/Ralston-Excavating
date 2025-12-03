@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ralston Excavating | Septic & Excavation in Colton, OR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Local, family-owned septic and excavation contractor serving Colton, Canby, Oregon City and nearby areas.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">RE</span>
+        <span class="logo-text">Ralston Excavating</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-phone" href="tel:15555555555">Call: (555) 555-5555</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Reliable Septic &amp; Excavation in Colton, OR</h1>
+          <p>Local, family-owned contractor providing septic systems, site prep, and excavation for homeowners and builders in the Colton, Canby, and Oregon City areas.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:15555555555">Call Now</a>
+            <a class="btn btn-secondary" href="#contact">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Septic Systems</h3>
+            <p>New system installs, replacements, and repairs for residential properties.</p>
+            <ul>
+              <li>Septic tank installation</li>
+              <li>Drain field replacement</li>
+              <li>System troubleshooting &amp; repairs</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <h3>Excavation &amp; Grading</h3>
+            <p>Site preparation and excavation for new builds and improvements.</p>
+            <ul>
+              <li>Site clearing &amp; grading</li>
+              <li>Trenching for utilities</li>
+              <li>Driveways &amp; access roads</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <h3>Septic Inspections</h3>
+            <p>Real estate and pre-sale septic inspections with clear, written findings.</p>
+            <ul>
+              <li>Buyer &amp; seller inspections</li>
+              <li>System performance checks</li>
+              <li>Repair recommendations</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-inner">
+        <div>
+          <h2>About Ralston Excavating</h2>
+          <p>Ralston Excavating is a local, family-owned contractor based in Colton, Oregon, providing dependable septic and excavation services to the surrounding communities.</p>
+          <p>Fully licensed and insured, focused on doing the job right the first time so your property is ready for the long term.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2>Recent Projects</h2>
+        <p>Photos of actual projects can be added here to showcase septic installs, tank replacements, and excavation work.</p>
+        <div class="gallery-grid">
+          <!-- Replace these placeholders with real images -->
+          <div class="gallery-item placeholder">Project Photo 1</div>
+          <div class="gallery-item placeholder">Project Photo 2</div>
+          <div class="gallery-item placeholder">Project Photo 3</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Request a Quote</h2>
+        <p>Tell us about your project and we’ll follow up with a call.</p>
+        <div class="contact-layout">
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" required>
+            </label>
+            <label>
+              Email
+              <input type="email" name="email">
+            </label>
+            <label>
+              City / Address
+              <input type="text" name="city">
+            </label>
+            <label>
+              Type of Work
+              <select name="work_type">
+                <option value="">Select...</option>
+                <option value="septic-install">Septic install / replacement</option>
+                <option value="septic-repair">Septic repair</option>
+                <option value="inspection">Septic inspection</option>
+                <option value="excavation">Excavation / grading</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+            <label>
+              Project Details
+              <textarea name="details" rows="4"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Request</button>
+          </form>
+          <div class="contact-info">
+            <h3>Contact</h3>
+            <p><strong>Phone:</strong> <a href="tel:15555555555">(555) 555-5555</a></p>
+            <p><strong>Location:</strong> Colton, OR and surrounding areas</p>
+            <p><strong>Service Area:</strong> Colton, Canby, Oregon City, and nearby communities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a href="tel:15555555555" class="sticky-call">Call Ralston Excavating</a>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Ralston Excavating. All rights reserved.</p>
+      <p>Septic &amp; Excavation Contractor | Colton, OR</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

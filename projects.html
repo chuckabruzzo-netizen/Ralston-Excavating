@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Ralston Excavating</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ralston Excavating project gallery - septic systems, excavation, and grading work in Colton, Canby, Oregon City areas.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">RE</span>
+        <span class="logo-text">Ralston Excavating</span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#about">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="header-phone" href="#" data-phone>Phone Number</a>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-projects" aria-label="Ralston Excavating project showcase">
+      <div class="hero-slides">
+        <div class="hero-slide is-active">
+          <img src="beavercreek1.jpg" alt="Beavercreek septic replacement project">
+        </div>
+        <div class="hero-slide">
+          <img src="truck.jpg" alt="Ralston Excavating equipment on site">
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Our Work</h1>
+          <p>Real projects. Real results. Septic systems, excavation, and site prep across the Colton area.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Gallery</a>
+            <a class="btn btn-secondary" href="index.html#contact">Get Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-gallery">
+      <div class="container">
+        <h2>Project Gallery</h2>
+        
+        <div class="projects-grid">
+          <!-- Beavercreek Project -->
+          <article class="project">
+            <h3>Septic Replacement – Beavercreek</h3>
+            <p>Full system replacement: tank, drain field, restoration.</p>
+            <div class="project-images">
+              <img src="beavercreek1.jpg" alt="Excavation phase">
+              <img src="beavercreek2.jpg" alt="New tank installation">
+              <img src="beavercreek3.jpg" alt="Completed restoration">
+            </div>
+          </article>
+
+          <!-- Add more projects here -->
+          <article class="project">
+            <h3>Site Prep – Canby</h3>
+            <p>20-acre clearing and grading for new construction.</p>
+            <div class="project-images">
+              <!-- Add your images here -->
+              <div class="placeholder-image">Project photos coming soon</div>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Driveway – Oregon City</h3>
+            <p>Gravel driveway install with proper drainage.</p>
+            <div class="project-images">
+              <!-- Add your images here -->
+              <div class="placeholder-image">Project photos coming soon</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Ralston Excavating. All rights reserved.</p>
+      <p>Septic &amp; Excavation Contractor | Colton, OR</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+    (function () {
+      const slides = document.querySelectorAll('.hero-slide');
+      if (!slides.length) return;
+      let index = 0;
+      const delay = 6000;
+      setInterval(() => {
+        slides[index].classList.remove('is-active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('is-active');
+      }, delay);
+    })();
+  </script>
+</body>
+</html>
