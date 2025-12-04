@@ -261,11 +261,6 @@ img {
 
 /* PHONE LINKS USING CONFIG (OPTIONAL) */
 
-a[data-phone] {
-  /* if you want them styled like primary buttons, you can leave blank
-     because .header-phone and .btn-primary already handle appearance */
-}
-
 /* SECTIONS */
 
 .section {
@@ -387,11 +382,6 @@ a[data-phone] {
   margin-top: 0;
 }
 
-.contact-info a,
-.contact-info p {
-  color: #111827;
-}
-
 .contact-info,
 .contact-info p,
 .contact-info a,
@@ -431,17 +421,7 @@ a[data-phone] {
 
 /* RESPONSIVE */
 
-@media (max-width: 480px) {
-  .header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  padding-block: 0.75rem;
-  /* remove: flex-wrap: nowrap; */
-}
-
-/* Inside your @media (max-width: 480px) { ... } block, add: */
+/* RESPONSIVE: small screens */
 @media (max-width: 480px) {
   .header-inner {
     flex-wrap: wrap;          /* allow wrapping on very small screens */
@@ -470,7 +450,6 @@ a[data-phone] {
   }
 }
 
-}
 
 @media (min-width: 640px) {
   .hero-inner {
