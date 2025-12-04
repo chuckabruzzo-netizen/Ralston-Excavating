@@ -132,40 +132,56 @@
         <h2>Request a Quote</h2>
         <p>Tell us about your project and we’ll follow up with a call.</p>
         <div class="contact-layout">
-          <form class="contact-form">
-            <label>
-              Name
-              <input type="text" name="name" required>
-            </label>
-            <label>
-              Phone
-              <input type="tel" name="phone" required>
-            </label>
-            <label>
-              Email
-              <input type="email" name="email">
-            </label>
-            <label>
-              City / Address
-              <input type="text" name="city">
-            </label>
-            <label>
-              Type of Work
-              <select name="work_type">
-                <option value="">Select...</option>
-                <option value="septic-install">Septic install / replacement</option>
-                <option value="septic-repair">Septic repair</option>
-                <option value="inspection">Septic inspection</option>
-                <option value="excavation">Excavation / grading</option>
-                <option value="other">Other</option>
-              </select>
-            </label>
-            <label>
-              Project Details
-              <textarea name="details" rows="4"></textarea>
-            </label>
-            <button type="submit" class="btn btn-primary">Send Request</button>
-          </form>
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  <!-- REQUIRED: Web3Forms access key -->
+  <input type="hidden" name="access_key" value="6fbb18d9-7fbe-4732-9292-0c14172e76eb">
+
+  <!-- OPTIONAL: email subject -->
+  <input type="hidden" name="subject" value="New quote request from website">
+
+  <!-- SPAM PROTECTION: honeypot field (leave hidden) -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+  <label>
+    Name
+    <input type="text" name="name" required>
+  </label>
+
+  <label>
+    Phone
+    <input type="tel" name="phone" required>
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email">
+  </label>
+
+  <label>
+    City / Address
+    <input type="text" name="city">
+  </label>
+
+  <label>
+    Type of Work
+    <select name="work_type">
+      <option value="">Select...</option>
+      <option value="septic-install">Septic install / replacement</option>
+      <option value="septic-repair">Septic repair</option>
+      <option value="inspection">Septic inspection</option>
+      <option value="excavation">Excavation / grading</option>
+      <option value="other">Other</option>
+    </select>
+  </label>
+
+  <label>
+    Project Details
+    <textarea name="details" rows="4"></textarea>
+  </label>
+
+  <button type="submit" class="btn btn-primary">Send Request</button>
+</form>
+
 
           <div class="contact-info">
             <h3>Contact</h3>
